@@ -1,11 +1,11 @@
-FROM lsiobase/nginx:3.10
+FROM lsiobase/nginx:3.12
 
 # set version label
 ARG BUILD_DATE
 ARG VERSION
 ARG TT_RSS_VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="sparklyballs"
+LABEL maintainer="Vaults"
 
 RUN \
  echo "**** install packages ****" && \
